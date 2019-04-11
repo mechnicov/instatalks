@@ -15,6 +15,7 @@ gem 'pg'
 gem 'faker'
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'jquery-rails'
+gem 'redis', '~> 3.0'
 
 group :development, :test do
   gem 'byebug'
