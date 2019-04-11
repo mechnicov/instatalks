@@ -1,24 +1,40 @@
-# README
+## Instatalks
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Description
 
-Things you may want to cover:
+Chat using Action Cable and Redis websockets
 
-* Ruby version
+### Launch
 
-* System dependencies
+1. Download or clone repo.
 
-* Configuration
+2. Use bundler
 
-* Database creation
+```console
+$ bundle install
+```
 
-* Database initialization
+3. Run database migrations.
 
-* How to run the test suite
+```console
+$ rails db:create
+$ rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Start server.
 
-* Deployment instructions
+```console
+$ rails s
+```
 
-* ...
+### License
+
+MIT – see `LICENSE`
+
+### Contacts
+
+Email me at
+
+```rb
+'dcdl-snotynu?fl`hk-bnl'.each_char.map(&:succ).join
+```
