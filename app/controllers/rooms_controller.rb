@@ -1,6 +1,4 @@
 class RoomsController < ApplicationController
-   before_action :set_users, only: [:index, :show]
-
   def index
     @rooms = Room.all
     @room = Room.new
