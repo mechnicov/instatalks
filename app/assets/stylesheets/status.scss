@@ -1,11 +1,5 @@
-.online_status {
-  color: red;
-  &.online {
-    color: green;
-  }
-}
-
-.letter-spacing {
+.online-status {
+  color: green;
   margin-left: 3px;
   margin-right: 3px;
 }

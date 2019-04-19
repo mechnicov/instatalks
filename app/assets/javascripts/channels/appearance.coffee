@@ -5,6 +5,10 @@ jQuery(document).on 'turbolinks:load', ->
     disconnected: ->
 
     received: (data) ->
-      user = $(".user-#{data['user_id']}")
-      user.toggleClass 'online', data['online']
-      $("#users").load(" #users")
+      users = data['users']
+
+      names = ""
+      for i in users
+        names += "#{i['nickname']} "
+
+      $('#users').text(names)
