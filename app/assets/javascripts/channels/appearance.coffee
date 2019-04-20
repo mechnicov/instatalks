@@ -5,10 +5,5 @@ jQuery(document).on 'turbolinks:load', ->
     disconnected: ->
 
     received: (data) ->
-      users = data['users']
-
-      names = ""
-      for i in users
-        names += "#{i['nickname']} "
-
-      $('#users').text(names)
+      users = (data['users'].map (i) -> i['nickname']).replace(/,/g, ' ')
+      $('#users').text(users)
